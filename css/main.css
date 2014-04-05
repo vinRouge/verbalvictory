@@ -1,0 +1,345 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.navbar-inverse{
+    background:none;
+    border:none;
+    color:#000;
+}
+
+.nav li:hover, .nav li.active:hover{
+    background-color:#004165;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover  {
+    background-color: #004165;
+}
+
+
+.navbar-inverse .navbar-nav >li >a{
+    text-shadow:none;
+    background-color:#fff;
+}
+
+
+.navbar{
+/*    top:164px;*/
+margin-top:-31px;
+
+}
+
+.container .navbar-collapse{
+    padding-left:0;
+    padding-right:0;
+}
+
+.red, .element.red{
+    background-color:#CD202C;
+    color:#fff;
+/*    box-size:padding-box;*/
+    padding:30px;
+}
+
+.banner{
+    background-image: url('../img/banner2.png');
+    background-position-x: -495px;
+    height:195px;
+    top:0;
+}
+
+#counter{
+    background-color:#f2df74;
+    margin-bottom:10px;
+}
+
+body{
+    padding-top:0px;
+    margin-bottom: 30px;
+}
+
+.main-container{
+    margin-top:70px;
+}
+
+.main-content{
+    padding-right:0;
+/*    background-image: url('../img/rays2.png');
+*/
+}
+
+#one{
+    background-image: url('../img/rays2.png');
+    background-position: 8% top;
+}
+
+#two{
+    background-image: url('../img/rays2.png');
+    background-position: 69% top;
+}
+
+#three{
+    background-image: url('../img/rays2.png');
+    background-position: 98% 3%;
+}
+
+#four{
+    background-image: url('../img/rays2.png');
+    background-position: 8% 33%;
+}
+
+#five{
+    background-image: url('../img/rays2.png');
+    background-position: 98% 164%;
+}
+
+#six{
+    background-image: url('../img/rays2.png');
+    background-position: 98% 196%;
+}
+
+#seven{
+    background-image: url('../img/rays2.png');
+    background-position: 5% -65%;
+}
+
+#eight{
+    background-image: url('../img/rays2.png');
+    background-position: 7% 224%;
+}
+
+#nine{
+    background-image: url('../img/rays2.png');
+    background-position: 36% 228%;
+}
+
+#ten{
+    background-image: url('../img/rays2.png');
+    background-position: 98% 96%;
+}
+
+.panel{
+    border-radius:0;
+    margin-bottom:10px;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color:#fff;
+}
+
+.panel-title>a:hover{
+    color:#fff;
+}
+
+.panel-default > .panel-heading {
+    background-image: none;
+    background-repeat: repeat-x;
+    background-color:#A9B2B1;
+}
+
+.panel-heading {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    position:relative;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    overflow: hidden;
+    border-radius: 0; 
+}
+
+.meeting{
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    border: 1px solid transparent;
+    border-color: #ddd;
+}
+
+.fb-widget{
+    height:200px;
+}
+
+footer{
+    background-color: #004165;
+    color:#f2df74;
+    padding:20px 20px;
+    margin: 10px -15px 0 -15px
+}
+
+footer a, footer a:hover{
+    color:#fff;
+}
+
+.no-dot{
+    list-style-type: none;
+    margin-left: -35px;
+}
+
+.sidebar{
+    padding-left: 0;
+} 
+
+.dropdown-menu>li>a{
+    color:#a9b2b1;
+}                                                             
+
+.dropdown-menu>li>a:hover{
+    background-color:#ffe;
+    background-image:none;
+    color:#000;
+
+  
+}
+
+.dropdown-menu{
+    border-radius:0;
+}
+
+.dropdown-menu li{
+      display:block;
+}
+
+.active:hover{
+    background-color:#CD202C;
+}
+
+.nav-pills>li>a{
+    border-radius: 0;
+    color:#a9b2b1;
+}
+
+.nav-pills>li>a:hover{
+    background-color: #ffe;
+}
+
+a{
+    color: #f2df74;
+}
+
+a:hover{
+    color: #f2df74;
+    text-decoration: underline;
+}
+
+.page-title{
+    padding-bottom:20px;
+}
+
+.element{
+    height:150px;
+    box-sizing:border-box;
+    /*background-color: #A9B2B1;*/
+    /*background-image: url('../img/rays2.png');*/
+}
+
+/*.element:hover{
+    background-image: url('../img/white_20.png')
+}*/
+
+
+
+
+.navbar-inverse .navbar-nav .contact >a {
+    background-color:#CD202C;
+    color:#fff !important;
+}
+
+.navbar .container{
+    padding-right:0;
+}
+
+
+.central-div{
+    height:304px;
+}
+
+.side-div{
+    display:block;
+}
+
+.div-wrapper{
+    padding-left: 0;
+    padding-right:0;
+}
+
+
+.modal-content{
+    border-radius: 0;
+    width:inherit;
+}
+
+.element.col-md-3{
+    width:24%;
+    margin:0.2%;
+}
+
+.element.col-md-6{
+    width:49%;
+    margin:0.2%;
+}
+
+.element.col-md-9{
+    width: 73%;
+    margin:0.2%;
+}
+
+.semi-hidden{
+    opacity:0.2;
+}
+
+.move-top{
+    top:0;
+    position:fixed;
+}
+
+.margin-top-100{
+    margin-top: 100px;
+}
+
+.margin-top-minus-195{
+    top:-215px;
+}
+
+.margin-top-30{
+    margin-top:-30px;
+}
+
+.element.margin-top-minus-152{
+    margin-top:-152px;
+}
+
+#map{
+    width:74%;
+}
+
+.modal-title{
+    color:#000;
+}
+/*============================
+FB widget styles
+==============================*/
+.fb{
+    height:363px;
+}
+
+#pres{
+    background-image:url('../img/michał_g.jpg');
+    background-position: 36% 33%;
+}
+
+
+
+
+
+
+
+
+
