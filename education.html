@@ -15,30 +15,22 @@
         <link rel="stylesheet" href="css/main.css">
   
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/header.js"></script>
     </head>
 
     <body>
-            <div id="fb-root"></div>
-      <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "http://connect.facebook.net/en_EN/all.js#xfbml=1";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
 
-
-      <div class="container banner"><a href="index.html"></a></div>
-
+        <div class="container banner"><a href="index.html"></a></div>
 
         <div class="navbar navbar-inverse">
           <div class="container">
               <ul class="nav navbar-nav pull-right">
                 <li><a href="index.html">Home/Verbal Victory</a></li>
                 <li><a href="meetings.html">Meetings & Events</a></li>
-                <li><a href="education.html">Educational Program</a></li>
+                <li class="active"><a href="education.html">Educational Program</a></li>
                 <li><a href="membership.html">Membership</a></li>
-                <li class="active"><a href="faq.html">FAQ</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li class="contact"><a href="contact.html">Contact</a></li>
               </ul>
           </div>
@@ -59,52 +51,37 @@
               </div>
           </div>
         </div>
+
+
         <div class="col-md-10 main-content panel">
-            <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-class="accordion-toggle" href="#collapseOne">
-                      1. How can I become a member?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>First, see if it’s really for you. How? By visiting our club. You are most welcome to come to our club even 4 times before you make the decision.</p>
-                    <p>If you decide that Verbal Victory is a place for you, you can talk to VP Membership and fill Membership Application Form.
-                    Don’t hesitate to ask if you have any questions about the club.</p>
+          <div class="row">
+            <div class="col-md-9 col-xs-6 element" id="one"></div>
+            <div class="col-md-3 col-xs-3 element" id="cc"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 element central-div" id="clman"></div>
+            <div class="col-md-6 element red central-div">
+              <h4 class="page-title">Master your speaking & leadership skills</h4>
+              <p>The 10 speech projects in this manual will help you develop your speaking skills one step at a time. When you finish all of the projects, you are eligible for Competent Communicator (CC) recognition.</p>
+              <p>Then you're ready to continue your <a type="button"data-toggle="modal" data-target="#TEDx-modal" href="http://www.youtube.com/watch?v=WStG9TnG0Gw">development track</a>.</p>
+              <div class="modal fade" id="TEDx-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Toastmasters Educatioinal Program</h4>
+                    </div>
+                    <div class="modal-body" id="edu">
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-class="accordion-toggle" href="#collapseTwo">
-                      2. How can I attend the meeting?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>You can simply come to visit us and have fun. We meet weekly on Mondays, 7 p.m. in Wyższa Szkoła Bankowa on Ratajczaka 5/7. The meeting is free for newcomers and you can visit Verbal Victory 4 times before you decide whether join the club. During those 4 meetings you get familiar with club members and the manner our meetings are held.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-class="accordion-toggle" href="#collapseThree">
-                      3. I’m afraid of speaking in public, it’s not for me.
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse">
-                  <div class="panel-body">
-                    <p>Even if you feel insecure when speaking in public, still you can come to Verbal Victory. Here, within supportive people, you can live your first speaking experience. Most of us were scared in the begining. But what is great in Verbal Victory is that now the same people are stage-hungry instead of being stage-fright. Simply give it a try!</p>
-                </div>
-              </div>
-            </div>     
+            </div>
+            <div class="col-md-3 element central-div" id="ccman"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 element" id="cl"></div>
+            <div class="col-md-9 visible-md visible-lg element" id="one"></div>
           </div>
          </div>
       </div>
@@ -165,4 +142,3 @@
         
     </body>
 </html>
-

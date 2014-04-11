@@ -38,7 +38,8 @@ margin-top:-31px;
 }
 
 .red, .element.red{
-    background-color:#CD202C;
+/*    background-color:#CD202C;
+*/    background-color:#772432;
     color:#fff;
 /*    box-size:padding-box;*/
     padding:30px;
@@ -53,7 +54,11 @@ margin-top:-31px;
 
 #counter{
     background-color:#f2df74;
+/*    background-image: url('../img/counter2.jpg');
+*/ 
+    box-size:border-box;
     margin-bottom:10px;
+    height:100px;
 }
 
 body{
@@ -61,64 +66,124 @@ body{
     margin-bottom: 30px;
 }
 
-.main-container{
-    margin-top:70px;
-}
 
 .main-content{
     padding-right:0;
+    padding-left: 0;
 /*    background-image: url('../img/rays2.png');
 */
 }
 
 #one{
-    background-image: url('../img/rays2.png');
-    background-position: 8% top;
+    background-image: url('../img/rays.png');
+    background-position: 62% 45%;
+
+}
+
+#index #one{
+    background-image: url('../img/pic4.jpg');
+    background-position: 69% 30%;
 }
 
 #two{
-    background-image: url('../img/rays2.png');
+    background-image: url('../img/rays.png');
     background-position: 69% top;
 }
 
+#index #two{
+    background-image: url('../img/pic10.jpg');
+    background-position: 69%;
+}
+
+
 #three{
-    background-image: url('../img/rays2.png');
+    background-image: url('../img/rays.png');
     background-position: 98% 3%;
 }
 
+#index #three{
+    background-image: url('../img/pic1.jpg');
+    background-position: 69%;
+}
+
 #four{
-    background-image: url('../img/rays2.png');
+    background-image: url('../img/rays.png');
     background-position: 8% 33%;
+    width:24.5%;
+}
+
+#index #four{
+    background-image: url('../img/pic6.jpg');
+    background-position: 69%;
 }
 
 #five{
-    background-image: url('../img/rays2.png');
+    background-image: url('../img/rays.png');
     background-position: 98% 164%;
 }
 
+#index #five{
+    background-image: url('../img/pic7.jpg');
+    background-position: 69%;
+}
+
 #six{
-    background-image: url('../img/rays2.png');
+    background-image: url('../img/rays.png');
     background-position: 98% 196%;
 }
 
+#index #six{
+    background-image: url('../img/pic2.jpg');
+    background-position: 69%;
+}
+
 #seven{
-    background-image: url('../img/rays2.png');
+    background-image: url('../img/rays.png');
     background-position: 5% -65%;
 }
 
 #eight{
-    background-image: url('../img/rays2.png');
+    background-image: url('../img/rays.png');
     background-position: 7% 224%;
 }
 
 #nine{
-    background-image: url('../img/rays2.png');
-    background-position: 36% 228%;
+    background-image: url('../img/rays.png');
+    background-position: 36% 267%;
 }
 
 #ten{
-    background-image: url('../img/rays2.png');
+    background-image: url('../img/rays.png');
     background-position: 98% 96%;
+}
+
+.membership, .venue{
+    background-image: url('../img/rays.png'); 
+}
+
+.membership#one{
+    background-position:21.5% 33.5%;
+}
+
+.membership#two{
+    background-position:45% 33.5%;
+}
+
+.membership#three{
+    background-position:21.5% 40%;
+}
+
+.membership#four{
+    background-position:45% 40%;
+}
+
+.venue#one{
+    background-position:16.5% 45%;
+}
+
+.venue#two{
+    background-position:40% 45%;
+
 }
 
 .panel{
@@ -159,8 +224,8 @@ body{
 .meeting{
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
     box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    border: 1px solid transparent;
-    border-color: #ddd;
+    /*border: 1px solid transparent;
+    border-color: #ddd;*/
 }
 
 .fb-widget{
@@ -171,7 +236,8 @@ footer{
     background-color: #004165;
     color:#f2df74;
     padding:20px 20px;
-    margin: 10px -15px 0 -15px
+    margin: 10px -15px 0 -15px;
+    font-size:12px;
 }
 
 footer a, footer a:hover{
@@ -184,6 +250,7 @@ footer a, footer a:hover{
 }
 
 .sidebar{
+    margin-top:0.2%;
     padding-left: 0;
 } 
 
@@ -195,8 +262,6 @@ footer a, footer a:hover{
     background-color:#ffe;
     background-image:none;
     color:#000;
-
-  
 }
 
 .dropdown-menu{
@@ -208,7 +273,9 @@ footer a, footer a:hover{
 }
 
 .active:hover{
-    background-color:#CD202C;
+/*    background-color:#CD202C;
+*/    background-color:#772432;
+
 }
 
 .nav-pills>li>a{
@@ -235,7 +302,7 @@ a:hover{
 
 .element{
     height:150px;
-    box-sizing:border-box;
+    box-sizing:margin-box;
     /*background-color: #A9B2B1;*/
     /*background-image: url('../img/rays2.png');*/
 }
@@ -248,7 +315,8 @@ a:hover{
 
 
 .navbar-inverse .navbar-nav .contact >a {
-    background-color:#CD202C;
+/*    background-color:#CD202C;
+*/    background-color:#772432;
     color:#fff !important;
 }
 
@@ -274,20 +342,34 @@ a:hover{
 .modal-content{
     border-radius: 0;
     width:inherit;
+    color:#000;
+    font-size:12px;
 }
+
 
 .element.col-md-3{
     width:24%;
     margin:0.2%;
 }
 
+
 .element.col-md-6{
     width:49%;
     margin:0.2%;
 }
 
+.element.col-sm-12{
+    width:98%;
+    margin:0.2%;
+}
+
 .element.col-md-9{
-    width: 73%;
+    width: 73.5%;
+    margin:0.2%;
+}
+
+.element.col-md-12{
+    width:98.5%;
     margin:0.2%;
 }
 
@@ -317,7 +399,8 @@ a:hover{
 }
 
 #map{
-    width:74%;
+    padding-left:0;
+    padding-right:0;
 }
 
 .modal-title{
@@ -330,10 +413,208 @@ FB widget styles
     height:363px;
 }
 
-#pres{
-    background-image:url('../img/michał_g.jpg');
-    background-position: 36% 33%;
+
+.contact-info{
+    color:#fff;
+    font-size: 12px;
 }
+
+.contact-info h4{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    margin-bottom: -8px;
+}
+
+
+.padding-10{
+    padding:10px;
+}
+
+
+.foto1{
+    background-image:url('../img/photo.jpg');
+    height:150px;
+    padding-left:0;
+    padding-right:0;
+}
+
+.foto2{
+    background-image:url('../img/photo2.jpg');
+    margin-left:-15px;
+    margin-right:-15px;
+    background-color:#000;
+    height:140px;
+    position:absolute;
+    bottom:0;
+}
+
+.foto3{
+    height:304px;
+}
+
+#saa, #tr, #vpe, #vppr{
+    background-color:#A9B2B1;
+    padding-left:0;
+    padding-right:0;
+}
+
+#pres{
+    padding-right:0;
+    padding-top:0;
+}
+
+.element.red#pres{
+    padding:0;
+}
+
+
+#vpe .foto1{
+    background-image:url('../img/szymon.jpg');
+    background-position: 60% 22%;
+}
+
+#vppr .foto1{
+    background-image:url('../img/roksana.jpg');
+    background-position: 58% 25%;
+}
+
+#vpm .foto2{
+    background-image:url('../img/paulina_p.jpg');
+}
+
+#saa .foto1{
+    background-image:url('../img/justyna_h.jpg');
+    background-position:42% 4%;
+}
+
+#secr .foto2{
+    background-image:url('../img/justyna_t.jpg'); 
+    background-position: 46% 0; 
+}
+
+#secr{
+    width:24.5%;
+}
+
+#tr .foto1{
+    background-image:url('../img/jerzy_z.jpg');
+}
+
+#secr, #vpm{
+    background-color:#A9B2B1;
+}
+
+#pres .foto3{
+    background-image:url('../img/michał_g.jpg');
+    padding-left:0;
+    padding-right:0;
+}
+
+#tagline{
+    margin-top: 63px;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+#tagline h3{
+    font-weight: normal;
+    font-size: 21px;
+}
+
+
+address{
+    font-weight:bold;
+    font-size:13px;
+    padding-top:20px;
+    padding-left: 30px;
+}
+
+.membership{
+/*    font-size:13px;
+*/    padding-top:20px;
+    padding-left: 30px;
+}
+
+
+#meetinfo{
+    height:456px;
+}
+
+#edu{
+    background-image: url('../img/dtm2.png');
+    height:350px;
+}
+
+#cc{
+    background-image: url('../img/cc.jpg');
+    background-position: 50% 0;
+}
+
+#ccman{
+    background-image: url('../img/ccman.jpg');
+
+}
+
+#cl{
+    background-image: url('../img/cl.jpg');
+    background-position: 50% 0;
+}
+
+#clman{
+    background-image: url('../img/clman.jpg');
+}
+
+.promise li, ul.promise{
+    font-size:12px;
+    list-style-image: url('../img/red.png');
+}
+#tmpromise p{
+    padding:30px 70px 0 70px;
+    text-transform: uppercase;
+    font-weight:bold;
+    color: #004165;
+
+}
+
+.promise{
+    padding:0 70px;
+}
+
+#tmpromise{
+    background-color:#fee;
+    box-size:border-box;
+    border:1px dashed #ddd;
+}
+
+#confidence{
+    background-image: url('../img/confidence.jpg');
+    width:24.5%;
+}
+
+.four{
+    font-size:150px;
+    font-weight:bold;
+    color: #004165;
+    margin-top:-50px;
+    margin-left:-20px;
+}
+
+#venue#one{
+    background-image: url('../img/rays.png');
+    background-position:50% 50%;
+
+}
+
+.col-md-6.membership#four{
+    width:49%;
+}
+
+.hide{
+    display:none;
+}
+
+
 
 
 
