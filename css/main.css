@@ -32,10 +32,10 @@ margin-top:-31px;
 
 }
 
-.container .navbar-collapse{
+/*.container .navbar-collapse{
     padding-left:0;
     padding-right:0;
-}
+}*/
 
 .red, .element.red{
 /*    background-color:#CD202C;
@@ -109,8 +109,8 @@ body{
 #four{
     background-image: url('../img/rays.png');
     background-position: 8% 33%;
-    width:24.5%;
-}
+/*    width:24.5%;
+*/}
 
 #index #four{
     background-image: url('../img/pic6.jpg');
@@ -189,6 +189,7 @@ body{
 .panel{
     border-radius:0;
     margin-bottom:10px;
+    border:0;
 }
 
 .panel-title {
@@ -252,6 +253,7 @@ footer a, footer a:hover{
 .sidebar{
     margin-top:0.2%;
     padding-left: 0;
+    border-right:5px solid #fff;
 } 
 
 .dropdown-menu>li>a{
@@ -300,16 +302,10 @@ a:hover{
     padding-bottom:20px;
 }
 
-.element{
+.height-150{
     height:150px;
-    box-sizing:margin-box;
-    /*background-color: #A9B2B1;*/
-    /*background-image: url('../img/rays2.png');*/
 }
 
-/*.element:hover{
-    background-image: url('../img/white_20.png')
-}*/
 
 
 
@@ -325,8 +321,8 @@ a:hover{
 }
 
 
-.central-div{
-    height:304px;
+.height-300{
+    height:300px;
 }
 
 .side-div{
@@ -346,31 +342,9 @@ a:hover{
     font-size:12px;
 }
 
-
-.element.col-md-3{
-    width:24%;
-    margin:0.2%;
-}
-
-
-.element.col-md-6{
-    width:49%;
-    margin:0.2%;
-}
-
-.element.col-sm-12{
-    width:98%;
-    margin:0.2%;
-}
-
-.element.col-md-9{
-    width: 73.5%;
-    margin:0.2%;
-}
-
-.element.col-md-12{
-    width:98.5%;
-    margin:0.2%;
+.border-2{
+    border:2px solid #fff;
+    box-sizing:border-boxs;
 }
 
 .semi-hidden{
@@ -433,25 +407,23 @@ FB widget styles
 
 
 .foto1{
-    background-image:url('../img/photo.jpg');
-    height:150px;
+    height:146px;
     padding-left:0;
     padding-right:0;
 }
 
 .foto2{
-    background-image:url('../img/photo2.jpg');
     margin-left:-15px;
     margin-right:-15px;
-    background-color:#000;
     height:140px;
     position:absolute;
     bottom:0;
 }
 
 .foto3{
-    height:304px;
+    height:296px;
 }
+
 
 #saa, #tr, #vpe, #vppr{
     background-color:#A9B2B1;
@@ -462,6 +434,10 @@ FB widget styles
 #pres{
     padding-right:0;
     padding-top:0;
+}
+
+#pres2{
+    padding:15px;
 }
 
 .element.red#pres{
@@ -479,37 +455,48 @@ FB widget styles
     background-position: 58% 25%;
 }
 
-#vpm .foto2{
+#vpm .foto2, #vpmfoto{
     background-image:url('../img/paulina_p.jpg');
 }
+
+.margin-top-left-2{
+    margin-top:2px;
+    margin-left:-2px;
+}
+
 
 #saa .foto1{
     background-image:url('../img/justyna_h.jpg');
     background-position:42% 4%;
 }
 
-#secr .foto2{
+#secr .foto2, #secrfoto{
     background-image:url('../img/justyna_t.jpg'); 
     background-position: 46% 0; 
 }
 
-#secr{
-    width:24.5%;
+.width-187{
+    width:187px;
 }
 
 #tr .foto1{
     background-image:url('../img/jerzy_z.jpg');
 }
 
-#secr, #vpm{
+#secr, #vpm, #vpm2, #secr2{
     background-color:#A9B2B1;
 }
 
-#pres .foto3{
+#pres .foto3, #presfoto{
     background-image:url('../img/michał_g.jpg');
     padding-left:0;
     padding-right:0;
 }
+
+#presfoto{
+    background-position: 47% 14%;
+}
+
 
 #tagline{
     margin-top: 63px;
@@ -574,7 +561,6 @@ address{
     text-transform: uppercase;
     font-weight:bold;
     color: #004165;
-
 }
 
 .promise{
@@ -583,13 +569,11 @@ address{
 
 #tmpromise{
     background-color:#fee;
-    box-size:border-box;
-    border:1px dashed #ddd;
-}
+/*    border:2px dashed #ddd;
+*/}
 
 #confidence{
     background-image: url('../img/confidence.jpg');
-    width:24.5%;
 }
 
 .four{
@@ -600,15 +584,6 @@ address{
     margin-left:-20px;
 }
 
-#venue#one{
-    background-image: url('../img/rays.png');
-    background-position:50% 50%;
-
-}
-
-.col-md-6.membership#four{
-    width:49%;
-}
 
 .hide{
     display:none;
