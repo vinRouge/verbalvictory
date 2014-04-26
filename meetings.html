@@ -29,18 +29,32 @@
 
       <div class="container banner"><a href="index.html"></a></div>
 
-        <div class="navbar navbar-inverse">
-          <div class="container">
-              <ul class="nav navbar-nav pull-right">
-                <li><a href="index.html">Home/Verbal Victory</a></li>
-                <li  class="active"><a href="meetings.html">Meetings & Events</a></li>
-                <li><a href="education.html">Educational Program</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li class="contact"><a href="contact.html">Contact</a></li>
-              </ul>
+      <nav class="navbar navbar-default container" role="navigation">
+        <div>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <span class="visible-xs" id="vv-menu"><h4>Verbal Victory</h4></span>
           </div>
-        </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav col-xs-12">
+              <li><a href="index.html">Home/Verbal Victory</a></li>
+              <li class="active"><a href="meetings.html">Meetings & Events</a></li>
+              <li><a href="education.html">Educational Program</a></li>
+              <li><a href="membership.html">Membership</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li class="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
 
 
 
@@ -51,12 +65,21 @@
     <div class="container">
       <div class="row">
         <div class="col-md-2 sidebar">
-          <div id="counter"></div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">To our next meeting</h3>
+            </div>
+            <div id="countdown" class="countdown"></div>  
+          </div>
           <div class="panel panel-default fb">
             <div class="panel-heading">
               <h3 class="panel-title">Find us on Facebook</h3>
             </div>
-              <div class="fb-like-box" data-width="190" data-height="325" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" lang="en">
+              <div class="fb-like-box hidden-sm hidden-xs" data-width="190" data-height="325" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" lang="en">
+              </div>
+              <div class="fb-like-box hidden-lg hidden-md visible-sm hidden-xs" data-width="600" data-height="120" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="false" lang="en">
+              </div>
+              <div class="fb-like-box hidden-md hidden-lg hidden-sm visible-xs" data-width="300" data-height="120" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="false" lang="en">
               </div>
           </div>
         </div>

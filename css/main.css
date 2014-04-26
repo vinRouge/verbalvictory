@@ -4,159 +4,160 @@
    Author's custom styles
    ========================================================================== */
 
-.navbar-inverse{
+/*=========================
+NAVBAR
+========================*/
+.navbar-default{
     background:none;
     border:none;
     color:#000;
 }
-
+.nav.navbar-nav.pull-right{
+    margin-right:-15px;
+}
 .nav li:hover, .nav li.active:hover{
     background-color:#004165;
+    color:#fff;
+    padding-left:0;
+    padding-right:0;
+}
+.navbar-default .navbar-nav .contact >a, .nav li.active.contact:hover{
+    background-color:#772432;
+    color:#fff !important;
 }
 
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover  {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover  {
     background-color: #004165;
+    color:#fff;
 }
-
-
-.navbar-inverse .navbar-nav >li >a{
+.navbar-default .navbar-nav >li >a{
     text-shadow:none;
     background-color:#fff;
 }
-
-
-.navbar{
-/*    top:164px;*/
-margin-top:-31px;
-
-}
-
-/*.container .navbar-collapse{
-    padding-left:0;
-    padding-right:0;
-}*/
-
-.red, .element.red{
-/*    background-color:#CD202C;
-*/    background-color:#772432;
+.navbar-default .navbar-nav > li > a:hover{
     color:#fff;
-/*    box-size:padding-box;*/
-    padding:30px;
+}
+.navbar-default .navbar-nav > li > a{
+    color:#999;
+    text-shadow:none;
+}
+.navbar{
+    margin-top:-31px;
+    border-radius: 0px;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+}
+.navbar-toggle{
+    border-radius: 0px;
+    margin-top:15px;
+    margin-left: 72px;
 }
 
+#vv-menu h4{
+    color:#999;
+    margin-top: 21px;
+}
+
+/*===========================
+GENERAL STYLES
+=======================*/
+footer{
+    background-color: #004165;
+    color:#f2df74;
+    padding:20px 20px;
+    margin: 5px -15px 0 -15px;
+    font-size:13px;
+}
+
+footer a, footer a:hover{
+    color:#fff;
+}
+.red{
+    background-color:#772432;
+    color:#fff;
+}
 .banner{
     background-image: url('../img/banner2.png');
-    background-position-x: -495px;
+    background-position: -450px 0;
     height:195px;
     top:0;
 }
-
-#counter{
-    background-color:#f2df74;
-/*    background-image: url('../img/counter2.jpg');
-*/ 
-    box-size:border-box;
-    margin-bottom:10px;
-    height:100px;
-}
-
 body{
     padding-top:0px;
     margin-bottom: 30px;
 }
 
-
+/*===========================
+MAIN CONTENT
+===========================*/
 .main-content{
     padding-right:0;
     padding-left: 0;
-/*    background-image: url('../img/rays2.png');
-*/
 }
-
 #one{
     background-image: url('../img/rays.png');
     background-position: 62% 45%;
-
 }
-
 #index #one{
     background-image: url('../img/pic4.jpg');
     background-position: 69% 30%;
 }
-
 #two{
     background-image: url('../img/rays.png');
     background-position: 69% top;
 }
-
 #index #two{
     background-image: url('../img/pic10.jpg');
     background-position: 69%;
 }
-
-
 #three{
     background-image: url('../img/rays.png');
     background-position: 98% 3%;
 }
-
 #index #three{
     background-image: url('../img/pic1.jpg');
     background-position: 69%;
 }
-
 #four{
     background-image: url('../img/rays.png');
     background-position: 8% 33%;
-/*    width:24.5%;
-*/}
-
+}
 #index #four{
     background-image: url('../img/pic6.jpg');
     background-position: 69%;
 }
-
 #five{
     background-image: url('../img/rays.png');
     background-position: 98% 164%;
 }
-
 #index #five{
     background-image: url('../img/pic7.jpg');
     background-position: 69%;
 }
-
 #six{
     background-image: url('../img/rays.png');
     background-position: 98% 196%;
 }
-
 #index #six{
     background-image: url('../img/pic2.jpg');
     background-position: 69%;
 }
-
 #seven{
     background-image: url('../img/rays.png');
     background-position: 5% -65%;
 }
-
 #eight{
     background-image: url('../img/rays.png');
     background-position: 7% 224%;
 }
-
 #nine{
     background-image: url('../img/rays.png');
     background-position: 36% 267%;
 }
-
 #ten{
     background-image: url('../img/rays.png');
     background-position: 98% 96%;
 }
-
 .membership, .venue{
     background-image: url('../img/rays.png'); 
 }
@@ -206,7 +207,7 @@ body{
 .panel-default > .panel-heading {
     background-image: none;
     background-repeat: repeat-x;
-    background-color:#A9B2B1;
+    background-color: #004165;
 }
 
 .panel-heading {
@@ -225,25 +226,13 @@ body{
 .meeting{
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
     box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    /*border: 1px solid transparent;
-    border-color: #ddd;*/
 }
 
 .fb-widget{
     height:200px;
 }
 
-footer{
-    background-color: #004165;
-    color:#f2df74;
-    padding:20px 20px;
-    margin: 10px -15px 0 -15px;
-    font-size:12px;
-}
 
-footer a, footer a:hover{
-    color:#fff;
-}
 
 .no-dot{
     list-style-type: none;
@@ -253,8 +242,8 @@ footer a, footer a:hover{
 .sidebar{
     margin-top:0.2%;
     padding-left: 0;
-    border-right:5px solid #fff;
-} 
+/*    border-right:5px solid #fff;
+*/} 
 
 .dropdown-menu>li>a{
     color:#a9b2b1;
@@ -305,21 +294,6 @@ a:hover{
 .height-150{
     height:150px;
 }
-
-
-
-
-
-.navbar-inverse .navbar-nav .contact >a {
-/*    background-color:#CD202C;
-*/    background-color:#772432;
-    color:#fff !important;
-}
-
-.navbar .container{
-    padding-right:0;
-}
-
 
 .height-300{
     height:300px;
@@ -387,6 +361,10 @@ FB widget styles
     height:363px;
 }
 
+.fbsmall{
+    height:100px;
+}
+
 
 .contact-info{
     color:#fff;
@@ -415,7 +393,7 @@ FB widget styles
 .foto2{
     margin-left:-15px;
     margin-right:-15px;
-    height:140px;
+    height:146px;
     position:absolute;
     bottom:0;
 }
@@ -434,14 +412,15 @@ FB widget styles
 #pres{
     padding-right:0;
     padding-top:0;
+    padding-left:0;
 }
 
-#pres2{
+/*#pres2{
     padding:15px;
-}
+}*/
 
-.element.red#pres{
-    padding:0;
+.padding-30{
+    padding:30px;
 }
 
 
@@ -479,8 +458,13 @@ FB widget styles
     width:187px;
 }
 
+.height-146{
+    height:146px;
+}
+
 #tr .foto1{
     background-image:url('../img/jerzy_z.jpg');
+    background-position:50%;
 }
 
 #secr, #vpm, #vpm2, #secr2{
@@ -587,6 +571,166 @@ address{
 
 .hide{
     display:none;
+}
+
+.breadcrumb{
+    border-radius: 0;
+    background:none;
+    margin-left:-25px;
+}
+
+.breadcrumb a{
+    color:#772432;
+}
+
+.time{
+    background-color:#000;
+    display:inline-block;
+    height:50px;
+    margin-top:10px;
+    width:29.5%;
+
+}
+
+/*=======================
+COUNTDOWN
+=======================*/
+.countdown {
+width: 180px;
+overflow: hidden;
+background: #fff;
+border-radius: 0px;
+border: 0px solid #444;
+height: 70px;
+float: left;
+margin: 0 0 20px;
+display: table;
+}
+.countdown>div {
+display: table-cell;
+}
+.countdown>div>span {
+display: block;
+text-align: center;
+font-family: sans-serif;
+}
+span.count {
+font-size: 34px;
+color: #000;
+line-height: 34px;
+padding-top: 7px;
+}
+span.title {
+color: #555;
+font-size: 12px;
+}
+.fb .panel-heading{
+    margin-top:80px;
+}
+
+/*===================
+MEDIA QUERIES
+=====================*/
+
+@media screen and  (max-width:1199px){
+    .countdown{
+        width:150px;
+    }
+    span.count {
+        font-size: 24px;
+        color: #000;
+        line-height: 34px;
+        padding-top: 7px;
+        }
+    span.title {
+        color: #555;
+        font-size: 11px;
+        }
+    .sidebar{
+        margin-top: 4.2%;
+        padding-right:0;
+    }
+    #vpm.height-300, #pres.height-300, #secr.height-300{
+        height:300px;
+    }
+/*    nav{
+        float:right;
+        margin-right: 84px!important;
+    }*/
+    .navbar{
+        border-radius: 0px;
+        box-shadow: none;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 991px){
+    #vpm.height-300, #pres.height-300, #secr.height-300{
+        height:150px;
+    }
+    #pres .foto3{
+        background: url('../img/michał_g_small.jpg');
+        height:146px;
+        position:absolute;
+        right:0;
+    }
+    #vpm .foto2{
+        margin-left:73%;
+    }
+    #secr .foto2{
+        margin-left:73%;
+        background-position: 90% 0;
+    }
+    .col-md-12.col-sm-9{
+        padding-left:0;
+    }
+    .fb{
+        height:130px;
+    }
+    .countdown{
+        width:260px;
+    }
+    footer{
+        font-size:14px;
+    }
+    .nav>li>a{
+        font-size:13px;
+    }
+    .navbar.navbar-default.container{
+        width:750px;
+        margin-right:0!important;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+    .sidebar{
+        margin-top:0.2%;
+    }
+/*    .navbar.navbar-default.container{
+        width:750px;
+        margin-right:70px!important;
+    }*/
+
+}
+
+
+
+@media screen and (max-width:767px){
+    .sidebar{
+        padding-left: 5px;
+        padding-right:5px;
+    }
+    .row{
+        margin-right:0;
+        margin-left:0;
+    }
+    nav{
+        float:right;
+        margin-right:0;
+        width:750px;
+    }
+    footer{
+        font-size:14px;
+    }
+
 }
 
 

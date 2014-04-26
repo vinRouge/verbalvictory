@@ -12,10 +12,10 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/mediaelementplayer.css" />
+
         <link rel="stylesheet" href="css/main.css">
-  
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script src="js/header.js"></script>
+        
     </head>
 
     <body>
@@ -30,36 +30,59 @@
 
 
         <div class="container banner"><a href="index.html"></a>
-          <div class="col-md-8 pull-right" id="tagline">
-<!--             <h3>Verbal Victory - Toastmasters Poznan English Speaking Club</h3>
- -->          </div>
-
+          <div class="col-md-8 pull-right" id="tagline"></div>
         </div>
 
-        <div class="navbar navbar-inverse">
-          <div class="container">
-              <ul class="nav navbar-nav pull-right">
-                <li class="active"><a href="index.html">Home/Verbal Victory</a></li>
-                <li><a href="meetings.html">Meetings & Events</a></li>
-                <li><a href="education.html">Educational Program</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li class="contact"><a href="contact.html">Contact</a></li>
-              </ul>
-          </div>
+        <div class="container">
+          <nav class="navbar navbar-default container col-xs-12" role="navigation">
+            <div>
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header col-xs-12">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <span class="visible-xs" id="vv-menu"><h4>Verbal Victory</h4></span>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav col-xs-12">
+                  <li class="active"><a href="index.html">Home/Verbal Victory</a></li>
+                  <li><a href="meetings.html">Meetings & Events</a></li>
+                  <li><a href="education.html">Educational Program</a></li>
+                  <li><a href="membership.html">Membership</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li class="contact"><a href="contact.html">Contact</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
         </div>
+
       
 
 
     <div class="container">
       <div class="row">
         <div class="col-md-2 sidebar">
-          <div id="counter"></div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">To our next meeting</h3>
+            </div>
+            <div id="countdown" class="countdown"></div>  
+          </div>
           <div class="panel panel-default fb">
             <div class="panel-heading">
               <h3 class="panel-title">Find us on Facebook</h3>
             </div>
-              <div class="fb-like-box" data-width="190" data-height="325" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" lang="en">
+              <div class="fb-like-box hidden-sm hidden-xs" data-width="190" data-height="325" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" lang="en">
+              </div>
+              <div class="fb-like-box hidden-lg hidden-md visible-sm hidden-xs" data-width="600" data-height="120" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="false" lang="en">
+              </div>
+              <div class="fb-like-box hidden-md hidden-lg hidden-sm visible-xs" data-width="300" data-height="120" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="false" lang="en">
               </div>
           </div>
         </div>
@@ -72,7 +95,7 @@
           </div>
           <div class="row">
             <div class="col-md-3 height-300 hide-xs visible-md visible-lg border-2" id="three"></div>
-            <div class="col-md-6 red height-300 border-2">
+            <div class="col-md-6 red height-300 padding-30 border-2">
               <h3 class="page-title">Welcome to Verbal Victory,</h3>
               <p>a synonym for Monday evening and a place where your communication and leadership skills will blossom.</p>
               <p>Everyone is welcome to join our meeting and for all who like to know what to expect, <a type="button"data-toggle="modal" data-target="#TEDx-modal">the video</a> will shed some light.</p>
@@ -84,7 +107,7 @@
                       <h4 class="modal-title" id="myModalLabel">The club experience</h4>
                     </div>
                     <div class="modal-body">
-                      <iframe width="560" height="315" src="//www.youtube.com/embed/WStG9TnG0Gw" frameborder="0" allowfullscreen></iframe>
+                      <iframe width="560" height="315" src="#" frameborder="0" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
@@ -151,9 +174,10 @@
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
+        <script src="js/jquery.countdown.js"></script>
+
         <script src="js/main.js"></script>
 
-        <script src="js/mediaelement-and-player.min.js"></script>
 
 
         

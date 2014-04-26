@@ -11,50 +11,79 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/mediaelementplayer.css" />
-        <link rel="stylesheet" href="css/main.css">
-  
+        <link rel="stylesheet" href="css/main.css"> 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script src="js/header.js"></script>
     </head>
 
     <body>
 
         <div class="container banner"><a href="index.html"></a></div>
 
-        <div class="navbar navbar-inverse">
-          <div class="container">
-              <ul class="nav navbar-nav pull-right">
+
+
+
+        <nav class="navbar navbar-default container" role="navigation">
+          <div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <span class="visible-xs" id="vv-menu"><h4>Verbal Victory</h4></span>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav col-xs-12">
                 <li><a href="index.html">Home/Verbal Victory</a></li>
                 <li><a href="meetings.html">Meetings & Events</a></li>
                 <li><a href="education.html">Educational Program</a></li>
                 <li><a href="membership.html">Membership</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li class="contact"><a href="contact.html">Contact</a></li>
+                <li class="contact active"><a href="contact.html">Contact</a></li>
               </ul>
-          </div>
-        </div>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
    
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
 
     <div class="container">
+
       <div class="row">
-        <div class="col-md-2 sidebar">
-          <div id="counter"> Meetings:</br> Monday 7 p.m. </div>
+        <div class="col-md-2 col-sm-12 sidebar">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">To our next meeting</h3>
+            </div>
+            <div id="countdown" class="countdown"></div>  
+          </div>
           <div class="panel panel-default fb">
             <div class="panel-heading">
               <h3 class="panel-title">Find us on Facebook</h3>
             </div>
-              <div class="fb-like-box" data-width="190" data-height="325" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" lang="en">
+              <div class="fb-like-box hidden-sm hidden-xs" data-width="190" data-height="325" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" lang="en">
+              </div>
+              <div class="fb-like-box hidden-lg hidden-md visible-sm hidden-xs" data-width="600" data-height="120" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="false" lang="en">
+              </div>
+              <div class="fb-like-box hidden-md hidden-lg hidden-sm visible-xs" data-width="300" data-height="120" data-href="https://www.facebook.com/toastmasters.poznan.english" colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="false" lang="en">
               </div>
           </div>
         </div>
 
 
         <div class="col-md-10 panel white contact-info">
+          <ol class="breadcrumb visible-sm visible-xs">
+            <li><a href="index">Verbal Victory</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ol>
           <div class="row">
-            <div class="col-md-6 col-sm-12 border-2 height-150" id="vpe">
+            <div class="col-md-6 border-2 height-150" id="vpe">
               <div class="col-md-9 col-sm-9 col-xs-12">
                 <h4 class="page-title">Education - Szymon Łużny</h4>
                 <p>Schedules members’ speeches and projects and serves as a resource for questions about education awards, speech contests, and the mentor program.</p>
@@ -70,47 +99,33 @@
               </div>
               <div class="col-md-3 col-sm-3 hidden-xs foto1"></div>
             </div>
-            <div class="col-sm-9 colxs-12 hidden-md hidden-lg border-2 height-150" id="vpm">
-              <h4 class="page-title">Membership - Paulina Pawlikowska</h4>
-                <p>Initiates contact with guests, makes them feel welcome, and provides them with the information they need to join. </p>
-                <p>Send <a href="mailto:membership@toastmasters-poznan.org">e-mail</a></p>
-            </div>
-            <div class="col-sm-3 height-150 foto1 margin-top-left-2 visible-sm hidden-xs hidden-md hidden-lg" id="vpmfoto"></div>
           </div>
           <div class="row">
-            <div class="col-sm-3 height-150 foto1 width-187 visible-sm hidden-xs hidden-md hidden-lg" id="secrfoto"></div>
-            <div class="col-sm-9 colxs-12 hidden-md hidden-lg border-2 height-150" id="secr">
-              <h4 class="page-title">Secretary- Justyna Trivedi</h4>
-                <p>Maintains all club records, manages club files, handles club correspondence, and takes the minutes at each club and executive committee meeting.</p>
-                <p>Send <a href="mailto:secretary@toastmasters-poznan.org">e-mail</a></p>
-            </div>
-          </div>
-          <div class="row">  
-            <div class="col-sm-9 colxs-12 hidden-md red hidden-lg border-2 height-150" id="pres">
-              <h4 class="page-title">Club President - Michał Grześkowiak</h4>
-                <p>Club leader. Presides at meetings of the Club, has general supervision of the operations of the Club. Serves as one of the Club’s representatives on Area and District Councils.</p>
-                <p>Send <a href="mailto:presidentmembership@toastmasters-poznan.org">e-mail</a></p>
-            </div>  
-            <div class="col-sm-3 height-150 foto1 margin-top-left-2 visible-sm hidden-xs hidden-md hidden-lg" id="presfoto"></div>
-            <div class="col-md-3 hidden-sm hidden-xs border-2 height-300" id="vpm">
-              <h4 class="page-title">Membership - Paulina Pawlikowska</h4>
-                <p>Initiates contact with guests, makes them feel welcome, and provides them with the information they need to join. </p>
-                <p>Send <a href="mailto:membership@toastmasters-poznan.org">e-mail</a></p>                
+            <div class="col-md-3 border-2 height-300" id="vpm">
+              <div class="col-md-12 col-sm-9">
+                <h4 class="page-title">Membership - Paulina Pawlikowska</h4>
+                  <p>Initiates contact with guests, makes them feel welcome, and provides them with the information they need to join. </p>
+                  <p>Send <a href="mailto:membership@toastmasters-poznan.org">e-mail</a></p> 
+              </div>       
               <div class="foto2 col-md-12 col-sm-3 hidden-xs"></div>
             </div>
-            <div class="col-md-6 col-sm-12 red border-2 height-300  hidden-xs hidden-sm" id="pres">
-              <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-12 col-xs-12 red border-2 height-300" id="pres">
+              <div class="col-md-6 col-sm-9 col-xs-12 ">
                 <h4 class="page-title">Club President - Michał Grześkowiak</h4>
                 <p>Club leader. Presides at meetings of the Club, has general supervision of the operations of the Club. Serves as one of the Club’s representatives on Area and District Councils.</p>
                 <p>Send <a href="mailto:president@toastmasters-poznan.org">e-mail</a></br>
                 Call <a href="mailto:president@toastmasters-poznan.org">666 666 666</a>
               </div>
-              <div class="col-md-6 col-sm-6 col-xs-12 foto3 hidden-xs"></div>
+              <div class="col-md-6 col-sm-3 foto3 hidden-xs"></div>
             </div>
-            <div class="col-md-3 border-2 height-300  hidden-xs hidden-sm" id="secr">
-              <h4 class="page-title">Secretary- Justyna Trivedi</h4>
-                <p>Maintains all club records, manages club files, handles club correspondence, and takes the minutes at each club and executive committee meeting.</p><p>Send <a href="mailto:secretary@toastmasters-poznan.org">e-mail</a></p>
-              <div class="foto2 col-md-12 hidden-xs"></div>
+
+            <div class="col-md-3 border-2 height-300" id="secr">
+              <div class="col-md-12 col-sm-9">
+                <h4 class="page-title">Secretary- Justyna Trivedi</h4>
+                  <p>Maintains all club records, manages club files, handles club correspondence, and takes the minutes at each club and executive committee meeting.</p>
+                  <p>Send <a href="mailto:secretary@toastmasters-poznan.org">e-mail</a></p>
+              </div>
+              <div class="foto2 col-md-12 col-sm-3 hidden-xs"></div>
             </div>
           </div>
           <div class="row">
@@ -131,31 +146,6 @@
               </div>              
             </div>
           </div>
-              
-
-
-          <!-- <div class="row">
-
-          </div>
-          <div class="row">
-            <div class="col-sm-9 red hidden-md hidden-lg border-2 height-150" id="pres">
-              <h4 class="page-title">Club President - Michał Grześkowiak</h4>
-                <p>Club leader. Presides at meetings of the Club, has general supervision of the operations of the Club. Serves as one of the Club’s representatives on Area and District Councils.</p>
-                <p>Send <a href="mailto:president@toastmasters-poznan.org">e-mail</a></p>
-            </div>                
-            <div class="foto2 height-150 col-sm-3 visible-sm"></div>
-          </div>
-          <div class="row">
-            <div class="foto col-sm-3 visible-sm"></div>
-            <div class="col-sm-9 hidden-md hidden-lg border-2 height-150" id="secr">
-              <h4 class="page-title">Secretary- Justyna Trivedi</h4>
-                <p>Maintains all club records, manages club files, handles club correspondence, and takes the minutes at each club and executive committee meeting.</p>
-                <p>Send <a href="mailto:secretary@toastmasters-poznan.org">e-mail</a></p>
-            </div>                
-          </div> -->
-
-
-
         </div>
       </div>
 
@@ -208,10 +198,7 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-
         <script src="js/main.js"></script>
-
-        <script src="js/mediaelement-and-player.min.js"></script>
         
     </body>
 </html>
