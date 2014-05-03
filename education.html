@@ -11,43 +11,42 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/mediaelementplayer.css" />
-        <link rel="stylesheet" href="css/main.css">
-  
+        <link rel="stylesheet" href="css/main.css"> 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script src="js/header.js"></script>
     </head>
 
     <body>
 
         <div class="container banner"><a href="index.html"></a></div>
 
-        <nav class="navbar navbar-default container" role="navigation">
-          <div>
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <span class="visible-xs" id="vv-menu"><h4>Verbal Victory</h4></span>
-            </div>
+        <div class="container col-lg-12">
+          <nav class="navbar navbar-default container col-xs-12" role="navigation">
+            <div>
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header col-xs-12">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <span class="visible-xs" id="vv-menu"><h4>Verbal Victory</h4></span>
+              </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav col-xs-12">
-                <li><a href="index.html">Home/Verbal Victory</a></li>
-                <li><a href="meetings.html">Meetings & Events</a></li>
-                <li class="active"><a href="education.html">Educational Program</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li class="contact"><a href="contact.html">Contact</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home/Verbal Victory</a></li>
+                  <li><a href="meetings.html">Meetings & Events</a></li>
+                  <li class="active"><a href="education.html">Educational Program</a></li>
+                  <li><a href="membership.html">Membership</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li class="contact"><a href="contact.html">Contact</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+        </div>
    
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
@@ -76,6 +75,10 @@
 
 
         <div class="col-md-10 panel">
+          <ol class="breadcrumb visible-sm visible-xs">
+            <li><a href="index.html">Verbal Victory</a></li>
+            <li><a href="#">Education</a></li>
+          </ol>
           <div class="row">
             <div class="col-md-9 col-xs-6 border-2 height-150" id="one"></div>
             <div class="col-md-3 col-xs-3 border-2 height-150" id="cc"></div>
@@ -85,16 +88,49 @@
             <div class="col-md-3 border-2 height-300 visible-lg visible-md hidden-sm hidden-xs" id="clman"></div>
             <div class="col-md-6 border-2 red height-300">
               <h4 class="page-title">Master your speaking & leadership skills</h4>
-              <p>The 10 speech projects in this manual will help you develop your speaking skills one step at a time. When you finish all of the projects, you are eligible for Competent Communicator (CC) recognition.</p>
-              <p>Then you're ready to continue your <a type="button"data-toggle="modal" data-target="#TEDx-modal" href="http://www.youtube.com/watch?v=WStG9TnG0Gw">development track</a>.</p>
+              <p>Our 10-step communication program will guide you through powerful and easy-to-use speaking techniques. You'll learn how to use body language or visuals, how to persuade and inspire. Then you can polish your abilities with advanced manuals.</p>
+              <p>Learn how to use critical thinking to evaluate, motivate and facilitate. Manage time effectively to plan and implement speaking and leadership projects of all kinds. Toastmasters can help you strenghten your leadership skills.</p>
+              <p>Take a look at <a type="button"data-toggle="modal" data-target="#TEDx-modal" href="#">Toastmasters development track</a>.</p>
               <div class="modal fade" id="TEDx-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      <h4 class="modal-title" id="myModalLabel">Toastmasters Educatioinal Program</h4>
+                      <h4 class="modal-title" id="myModalLabel">Toastmasters Educational Program</h4>
                     </div>
                     <div class="modal-body" id="edu">
+                      <div class="col-md-3 lt">
+                        <div class="row">
+                          <button type="button" class="tm" data-toggle="tooltip" data-placement="top" title="Complete 10 projects from CL manual">Competent Leader (CL)</button>
+                        </div>
+                        <div class="row">
+                          <button type="button" class="tm" data-toggle="tooltip" data-placement="top" title="+ Complete CC, be trained club officer + conduct 2 presentations from The Successful Club Series/ The Leadership Excellence Series">Advanced Leader Bronze (ALB)</button>
+                        </div>
+                        <div class="row">
+                          <button type="button" class="tm" data-toggle="tooltip" data-placement="top" title="+ Serve as district officer and club sponsor/mentor/coach + complete High Performance Leadership program">Advanced Leader Silver (ALS)</button>
+                        </div>
+                      </div>
+                      <div class="col-md-1 plus">+</div>
+                      <div class="col-md-4 ct">
+                        <div class="row">
+                          <button type="button" class="tm" data-toggle="tooltip" data-placement="top" title="Complete 10 projects from CC manual">Competent Communicator (CC)</button>
+                        </div>
+                        <div class="row">
+                          <button type="button" class="tm" data-toggle="tooltip" data-placement="top" title="+ Complete 2 of 15 advanced manuals">Advanced Communicator Bronze (ACB)</button>
+                        </div>
+                        <div class="row">
+                          <button type="button" class="tm" data-toggle="tooltip" data-placement="top" title="+ Complete 2 more advanced manuals + conduct 2 presentations from The Better Speaker Series/ The Successful Club Series">Advanced Communicator Silver (ACS)</button>
+                        </div>
+                        <div class="row">
+                          <button type="button" class="tm" data-toggle="tooltip" data-placement="top" title="+ Complete 2 more advanced manuals + conduct 2 presentations from The Success/Leadership Series, Success/Communication Series, Youth Leadership + coach a new member with the first three speech projects">Advanced Communicator Gold (ACG)</button>
+                        </div>
+                      </div>
+                      <div class="col-md-1 equals">=</div>
+                      <div class="col-md-2 dtm">
+                        <div class="row">
+                          <button type="button" class="tm" data-toggle="tooltip" data-placement="top" title="Achieve Advanced Leadership Silver and Advanced Communicator Gold recognitions">Distinguished Toastmaster (DTM)</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -129,11 +165,12 @@
             <ul class="no-dot">Clubs in Poznań
               <li><a href="http://www.toastmasterspoznan.pl">Toastmasters Poznań</a></li>
               <li><a href="http://www.facebook.com/KontestMasters?fref=ts">Kontestmasters</a></li>
+              <li><a href="http://toastmasters.edu.pl/?page_id=13">Clubs in Poland</a></li>
             </ul>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-12">
             <ul class="no-dot">Conferences
-              <li><a href="mailto:president@toastmasters-poznan.org">TLI 2014 Poznań</a></li>
+              <li><a href="http://tli.tm.pl">TLI 2014 Poznań</a></li>
               <li><a href="http://conference.toastmasterskrakow.eu/">D59 Conference in Kraków</a></li>
               <li><a href="https://www.youtube.com/watch?v=kjvUij52AFA&list=PLsRNoUx8w3rNeul7bq_urV84Li-UwZqJO">TEDx Poznań 2014</a></li>
 
@@ -161,7 +198,7 @@
 
         <script src="js/main.js"></script>
 
-        <script src="js/mediaelement-and-player.min.js"></script>
+
         
     </body>
 </html>

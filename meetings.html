@@ -29,32 +29,34 @@
 
       <div class="container banner"><a href="index.html"></a></div>
 
-      <nav class="navbar navbar-default container" role="navigation">
-        <div>
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <span class="visible-xs" id="vv-menu"><h4>Verbal Victory</h4></span>
-          </div>
+      <div class="container col-lg-12">
+          <nav class="navbar navbar-default container col-xs-12" role="navigation">
+            <div>
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header col-xs-12">
+                <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <span class="visible-xs" id="vv-menu"><h4>Verbal Victory</h4></span>
+              </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav col-xs-12">
-              <li><a href="index.html">Home/Verbal Victory</a></li>
-              <li class="active"><a href="meetings.html">Meetings & Events</a></li>
-              <li><a href="education.html">Educational Program</a></li>
-              <li><a href="membership.html">Membership</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li class="contact"><a href="contact.html">Contact</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home/Verbal Victory</a></li>
+                  <li class="active"><a href="meetings.html">Meetings & Events</a></li>
+                  <li><a href="education.html">Educational Program</a></li>
+                  <li><a href="membership.html">Membership</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li class="contact"><a href="contact.html">Contact</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+        </div>
 
 
 
@@ -84,39 +86,56 @@
           </div>
         </div>
         <div class="col-md-10">
-          
+          <ol class="breadcrumb visible-sm visible-xs">
+            <li><a href="index.html">Verbal Victory</a></li>
+            <li><a href="#">Meetings</a></li>
+          </ol>
           <div class="row">
-            <div class="col-md-12 border-2 venue" id="two">
-              <address>
-                <p>Meet us every Monday 7 p.m</p>
-                <p>Wyższa Szkoła Bankowa, Poznan</br>
-                Powstańców Wlkp. 2A </br>(new BR building)</p>
+            <div class="col-md-12 border-2 venue height-150" id="meetplace">
+              <address class="col-md-6">
+                <p>Meet us <u>every Monday 7 p.m </u></p>
+                <p>Wyższa Szkoła Bankowa, Powstańców Wlkp. 2A, Poznań</p>
                 <p>and join the afterparty to talk and socialize :)</p>
               </address>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12 border-2" id="map">
+            <div class="col-md-6 col-sm-6 col-xs-12 border-2 hidden-xs" id="map">
               <iframe width='100%' height='452px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/vinrouge.ho543eif/attribution,zoompan,zoomwheel.html'></iframe>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 border-2 visible-xs hidden-sm hidden-md hidden-lg" id="map">
+              <iframe width='100%' height='300px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/vinrouge.ho543eif/attribution,zoompan.html'></iframe>
             </div> 
+ 
             <div class="col-md-6 col-sm-6 col-xs-12 red border-2" id="meetinfo">
               <p>During our meetings you'll be able to:</p>
-              <ul>
+              <ol class="margin-bottom-20">
                 <li>Listen to speeches (usually two of them) prepared according to Toastmasters manuals (basic or advanced) </li>
                 <li>Take part in improvisation (Table Topics) and see how we deal with questions we don't want to answer</li>
                 <li>See how we learn and practice our skills of listening, giving feedback or motivating our teams</li>
-              </ul> 
-              <p>A team of evaluators will be there to help you find your strengths and disguise areas you should work on. Evaluators will give you specific examples for improving your speaking and leadership skills.</p>  
-              <p>Take a look at <a type="button"data-toggle="modal" data-target="#TEDx-modal" href="http://www.youtube.com/watch?v=WStG9TnG0Gw">exemplary agenda</a> of a Verbal Victory meeting.</p>
+              </ol> 
+              <p class="margin-bottom-20">To get the most out of every meeting we put all the speaking and leadership roles in a structured agenda.
+              Toastmaster of the evening runs the whole event & intruduces everybody entering the stage.</p>
+              <p class="margin-bottom-20">A team of evaluators is there to help you find your strengths and disguise areas you should work on. Evaluators will give you specific examples for improving your speaking and leadership skills.</p>  
+              <p>Take a look at how <a type="button"data-toggle="modal" data-target="#TEDx-modal" href="#">Verbal Victory meetings</a> are arranged.</p>
               <div class="modal fade" id="TEDx-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
                       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                      <h4 class="modal-title" id="myModalLabel">Verbal Victory exemplary agenda</h4>
+                      <h4 class="modal-title" id="myModalLabel">Meeting structure</h4>
                     </div>
                     <div class="modal-body" id="agenda">
+                      <p class="margin-bottom-10">A meeting (1.5h - 2h) is usually divided into a few parts:</p>
+                      <ol>
+                        <li>WORDS OF WELCOME & INTRODUCTION (15 min)</li>
+                        <li>SESSION OF PREPARED SPEECHES (1-3 SPEAKERS) (20-30 min)</li>
+                        <li>SESSION OF IMPROMPTU SPEECHES (3-7 SPEAKERS) (20 min)</li>
+                        <li>SESSION OF EVALUATIONS (FEEDBACK FOR ALL THE SPEAKERS) (10-15 min)</li>
+                        <li>SESSION OF THE MEETING EVALUATIONS (TIMING, LANGUAGE, ROLES) (10 min)</li>
+                        <li>CLOSING & AFTER PARTY (as long as you want :))</li>
+                      </ol>
                     </div>
                   </div>
                 </div>
@@ -150,11 +169,12 @@
             <ul class="no-dot">Clubs in Poznań
               <li><a href="http://www.toastmasterspoznan.pl">Toastmasters Poznań</a></li>
               <li><a href="http://www.facebook.com/KontestMasters?fref=ts">Kontestmasters</a></li>
+              <li><a href="http://toastmasters.edu.pl/?page_id=13">Clubs in Poland</a></li>
             </ul>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-12">
             <ul class="no-dot">Conferences
-              <li><a href="mailto:president@toastmasters-poznan.org">TLI 2014 Poznań</a></li>
+              <li><a href="http://tli.tm.pl">TLI 2014 Poznań</a></li>
               <li><a href="http://conference.toastmasterskrakow.eu/">D59 Conference in Kraków</a></li>
               <li><a href="https://www.youtube.com/watch?v=kjvUij52AFA&list=PLsRNoUx8w3rNeul7bq_urV84Li-UwZqJO">TEDx Poznań 2014</a></li>
 
@@ -177,11 +197,8 @@
     </div> <!-- /container -->        
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
-
         <script src="js/main.js"></script>
-
         <script src="js/mediaelement-and-player.min.js"></script>
         
     </body>
