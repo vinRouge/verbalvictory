@@ -93,11 +93,14 @@ body{
     margin-bottom: 30px;
 }
 a{
-    color: #f2df74;
+    color: #772432;
 }
 a:hover{
-    color: #f2df74;
+    color: #772432;
     text-decoration: underline;
+}
+#meetinfo a{
+    color:#F2DF74;
 }
 address{
     font-weight:bold;
@@ -107,6 +110,7 @@ address{
 }
 .red{
     background-color:#772432;
+    background-color: #004165;
     color:#fff;
 }
 .banner{
@@ -145,6 +149,9 @@ address{
     overflow: hidden;
     border-radius: 0; 
 }
+.panel-body{
+    border: 1px solid #004165;
+}
 .sidebar{
     margin-top:0.2%;
     padding-left: 0;
@@ -160,9 +167,6 @@ address{
 }
 .breadcrumb a{
     color:#772432;
-}
-#accordion .panel-heading{
-    background-color: #999999;
 }
 #edu button{
     color:#fff;
@@ -185,6 +189,9 @@ address{
     background-image:url('../img/rays2.png');
     background-position:39% 48%;
     margin-top:60px;
+}
+#edu a{
+    color:#F2DF74;
 }
 .lt{
     margin-top: 25px;
@@ -215,6 +222,9 @@ SIZES
 }
 .height-300{
     height:300px;
+}
+.height-450{
+    height:450px;
 }
 .margin-bottom-20{
     margin-bottom:20px;
@@ -258,67 +268,56 @@ MAIN CONTENT
     background-image: url('../img/pic4.jpg');
     background-position: 69% 30%;
 }
-#two{
+/*#two{
     background-image: url('../img/rays.png');
     background-position: 69% top;
-}
+}*/
 #index #two{
     background-image: url('../img/pic10.jpg');
     background-position: 69%;
 }
-#three{
+/*#three{
     background-image: url('../img/rays.png');
     background-position: 98% 3%;
-}
+}*/
 #index #three{
     background-image: url('../img/pic1.jpg');
     background-position: 69%;
 }
-#four{
-    background-image: url('../img/rays.png');
-    background-position: 8% 33%;
+#upperleft{
+    background-image: url('../img/bg-white.png'),url('../img/rays2.png');
+    background-position: 20% 32%, 50% 16%;
+    background-repeat: no-repeat;
+    padding:25px;
+}
+#lowerleft{
+    background-image: url('../img/rays2.png');
+    background-position: 50% 65%;
+    padding:15px 25px 25px 25px;
+}
+#right{
+    background-image: url('../img/rays2.png');
+    background-position: 109% 39%;
+    padding:25px;
 }
 #index #four{
     background-image: url('../img/pic6.jpg');
     background-position: 69%;
 }
-#five{
-    background-image: url('../img/rays.png');
-    background-position: 98% 164%;
-}
 #index #five{
     background-image: url('../img/pic7.jpg');
     background-position: 69%;
 }
-#six{
-    background-image: url('../img/rays.png');
-    background-position: 98% 196%;
-}
 #index #six{
     background-image: url('../img/pic2.jpg');
     background-position: 69%;
-}
-#seven{
-    background-image: url('../img/rays.png');
-    background-position: 5% -65%;
-}
-#eight{
-    background-image: url('../img/rays.png');
-    background-position: 7% 224%;
-}
-#nine{
-    background-image: url('../img/rays.png');
-    background-position: 36% 267%;
-}
-#ten{
-    background-image: url('../img/rays.png');
-    background-position: 98% 96%;
 }
 .membership, .venue{
     background-image: url('../img/rays.png'); 
 }
 .membership#one{
     background-position:21.5% 33.5%;
+    padding:25px;
 }
 .membership#two{
     background-position:45% 33.5%;
@@ -333,27 +332,37 @@ MAIN CONTENT
     padding-top:20px;
     padding-left: 30px;
 }
-.membership{
+/*.membership{
     font-size:12px;
-}
+}*/
 .membership ul{
     list-style-image: url('../img/red.png');
 }
+.membership.col-md-6.col-sm-6{
+    padding:0;
+}
+.why{
+    font-size:14px;
+}
+.why > li{
+    padding-top:10px;
+}
+
 .four{
     font-size:150px;
     font-weight:bold;
     color: #004165;
-    margin-top:-50px;
-    margin-left:-20px;
     padding-right: 75px;
+    float:left;
+    line-height:180px;
+
 }
 #meetinfo{
     height:456px;
     padding:20px;
 }
-#edu{
-/*    background-image: url('../img/dtm2.png');
-*/    height:350px;
+#edu.modal-body{
+    height:350px;
 }
 #cc{
     background-image: url('../img/cc.jpg');
@@ -394,10 +403,12 @@ MAIN CONTENT
 }
 #tmpromise{
     background-color:#fee;
+    font-weight:12px;
 }
 #confidence{
 /*    background-image: url('../img/confidence.jpg');
-*/    background-image:url('../img/Keep-Calm.jpg');
+*/  background-image:url('../img/memb.jpg');
+    background-position: 88% 8%;
 }
 .page-title{
     padding-bottom:20px;
