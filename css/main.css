@@ -113,6 +113,11 @@ address{
     background-color: #004165;
     color:#fff;
 }
+.logo{
+    position:absolute;
+    left:14.8%;
+    top:2%;
+}
 .banner{
     background-image: url('../img/banner2.png');
     background-position: -450px 0;
@@ -151,6 +156,11 @@ address{
 }
 .panel-body{
     border: 1px solid #004165;
+    background-image: url('../img/rays.png');
+    background-position:134.5% 45%;
+}
+#yellow, #yellow a, #yellow a:hover{
+    color:#F2DF74;
 }
 .sidebar{
     margin-top:0.2%;
@@ -286,7 +296,7 @@ MAIN CONTENT
 }
 #upperleft{
     background-image: url('../img/bg-white.png'),url('../img/rays2.png');
-    background-position: 20% 32%, 50% 16%;
+    background-position: 20% 44%, 50% 16%;
     background-repeat: no-repeat;
     padding:25px;
 }
@@ -468,7 +478,7 @@ FB widget styles
 CONTACT
 ==========================*/
 .contact-info{
-    color:#fff;
+/*    color:#fff;*/
     font-size: 12px;
 }
 .contact-info h4{
@@ -575,7 +585,7 @@ font-family: sans-serif;
 }
 span.count {
 font-size: 34px;
-color: #000;
+color: #999;
 line-height: 34px;
 padding-top: 7px;
 }

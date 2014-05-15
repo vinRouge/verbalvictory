@@ -16,8 +16,19 @@
     </head>
 
     <body>
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "http://connect.facebook.net/en_EN/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
-        <div class="container banner"><a href="index.html"></a></div>
+        <div class="container banner">
+          <a href="index.html"><img class="logo" src="img/logo2.png"></a>
+          <div class="col-md-8 pull-right" id="tagline"></div>
+        </div>
 
         <div class="container col-lg-12">
           <nav class="navbar navbar-default container col-xs-12" role="navigation">
@@ -76,7 +87,7 @@
         </div>
 
 
-        <div class="col-md-10 panel white contact-info">
+        <div class="col-md-10 panel contact-info">
           <ol class="breadcrumb visible-sm visible-xs">
             <li><a href="index.html">Verbal Victory</a></li>
             <li><a href="#">Contact</a></li>
@@ -112,8 +123,8 @@
               <div class="col-md-6 col-sm-9 col-xs-12 ">
                 <h4 class="page-title">Club President - Michał Grześkowiak</h4>
                 <p>Club leader. Presides at meetings of the Club, has general supervision of the operations of the Club. Serves as one of the Club’s representatives on Area and District Councils.</p>
-                <p>Send <a href="mailto:president@toastmasters-poznan.org">e-mail</a></br>
-                Call <a href="mailto:president@toastmasters-poznan.org">666 666 666</a>
+                <p>Send <a id="yellow" href="mailto:president@toastmasters-poznan.org">e-mail</a></br>
+                Call <span id="yellow">+48 605 601 979</span>
               </div>
               <div class="col-md-6 col-sm-3 foto3 hidden-xs"></div>
             </div>
@@ -150,11 +161,11 @@
 
       <footer>
         <div class="row">
-          <div class="col-md-2 col-sm-4 col-xs-12">
+          <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12">
             <ul class="no-dot">For newcomers
+              <li><a href="faq.html">Frequently asked questions</a></li>
               <li><a href="http://www.toastmasters.org">Toastmasters.org</a></li>
               <li><a href="membership.html">How to join</a></li>
-              <li><a href="faq.html">Frequently asked questions</a></li>
             </ul>
           </div>
           <div class="col-md-2 col-sm-4 col-xs-12">
@@ -171,17 +182,17 @@
               <li><a href="http://toastmasters.edu.pl/?page_id=13">Clubs in Poland</a></li>
             </ul>
           </div>
-          <div class="col-md-2 col-sm-4 col-xs-12">
+<!--           <div class="col-md-2 col-sm-4 col-xs-12">
             <ul class="no-dot">Conferences
               <li><a href="http://tli.tm.pl">TLI 2014 Poznań</a></li>
               <li><a href="http://conference.toastmasterskrakow.eu/">D59 Conference in Kraków</a></li>
               <li><a href="https://www.youtube.com/watch?v=kjvUij52AFA&list=PLsRNoUx8w3rNeul7bq_urV84Li-UwZqJO">TEDx Poznań 2014</a></li>
             </ul>
-          </div>
+          </div> -->
           <div class="col-md-2 col-sm-4 col-xs-12">
             <ul class="no-dot">Officer resources
-              <li><a href="http://www.toastmasters.org/clh">Officer handbook</a></li>
-              <li><a href="http://www.toastmasters.org/1111_DCP">Distinguished Club Program</a></li> 
+              <li><a href="http://www.toastmasters.org/1111_DCP">Distinguished Club Program</a></li>
+              <li><a href="http://www.toastmasters.org/clh">Officer handbook</a></li>   
               <li><a href="http://www.toastmasters.org/Members/MembersFunctionalCategories/AboutTI/ServiceChart.aspx">Toastmasters hierarchy</a></li>                   
             </ul>
           </div>
@@ -191,11 +202,12 @@
             </ul>
           </div>
         </div>
-      </footer>    </div> <!-- /container -->        
+      </footer>    
+    </div> <!-- /container -->        
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/jquery.countdown.js"></script>
         <script src="js/main.js"></script>
         
     </body>
